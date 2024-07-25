@@ -83,6 +83,10 @@ body {
     padding: 4px;
 }
 
+.menu {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-between;
@@ -240,4 +244,99 @@ body {
     background: rgba(255, 255, 255, 0.1);
 
     transform: translateX(230px) translateY(-350px);
+}
+
+
+
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+    /* header */
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .content {
+        max-width: 80%;
+        margin: 2rem auto;
+    }
+
+    .menu {
+        display: block;
+        color: white;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+    .shape-healthy-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .shape-healthy-section h1 {
+        font-size: 36px;
+    }
+
+    #shape {
+        font-size: 55px;
+    }
+
+    .shape-healthy-image img {
+        width: 100%;
+    }
+
+    .btn-primary, .download-btn{
+        width: 169px;
+        font-weight: 400;
+    }
+
+    .shape-btns {
+        gap: 0.2rem;
+    }
+
+    #club {
+        display: none;
+    }
+
+    .tutorial-circle {
+        width: 30.24px;
+        height: 30.24px;
+    }
+
+    .tutorial h3 {
+        font-size: 19px;
+    }
+
+    .tutorial p {
+        font-size: 12px;
+    }
+    
+    .tutorial {
+        width: 155.74px;
+        height: 72.58px;
+        border-radius: 9.07px;
+
+        transform: translateX(10px) translateY(-320px);   
+        margin-bottom: -150px;
+    }
+
+    .workout-video h3 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+    
+    .workout-video p {
+        font-size: 9.83px;
+    }
+    
+    .workout-video {
+        width: 135px;
+        height: 74px;
+        border-radius: 9px;
+    
+        transform: translateX(200px) translateY(-450px);
+    }
+    
 }
