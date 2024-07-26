@@ -28,22 +28,25 @@ body {
 
 
 .btn-primary {
-    background: rgb(230, 83, 60);
     width: 205px;
     height: 50px;
+    background: rgb(230, 83, 60);
+    border-radius: 42px;
+    border: none;
+
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
     padding: 10px 25px;
-    border-radius: 42px;
-    border: none;
 }
 
 
 
-
+/* ------------------ */
 /* header */
+/* ------------------ */
+
 .header {
     background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%), 
     linear-gradient(0deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.2) 100%);
@@ -51,21 +54,19 @@ body {
 
 /* nav-bar styles */
 .nav-bar {
-    padding-top: 57px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 57px;
+    margin: 0 auto;
 }
 
 .logo {
     color: rgb(230, 83, 60);
     font-size: 36px;
     font-weight: 800;
-    line-height: 120%;
-    letter-spacing: 0%;
-    text-align: left;
+    font-style: italic;
 }
 
 .nav-menu {
@@ -73,6 +74,7 @@ body {
     height: 46px;
     font-size: 18px;
     font-weight: 400;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -83,13 +85,10 @@ body {
     padding: 4px;
 }
 
-.menu {
-    display: none;
-}
-
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     gap: 3rem;
 }
@@ -103,16 +102,15 @@ body {
     background: rgb(230, 83, 60);
     width: 70px;
     height: 22px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    letter-spacing: 0%;
     border-radius: 46px;
+    padding: 8px 30px;
+}
+
+.menu {
+    display: none;
 }
 
 
@@ -125,14 +123,12 @@ body {
     gap: 18rem;
 }
 
+
 .shape-healthy-section h1 {
     color: rgb(255, 255, 255);
-    /* font-family: Inter; */
     font-size: 78px;
     font-weight: 900;
     line-height: 120%;
-    letter-spacing: 0%;
-    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -142,7 +138,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
-    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -164,12 +159,12 @@ body {
 .download-btn {
     width: 205px;
     height: 50px;
+    color: white;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
     box-sizing: border-box;
     background-color: rgb(17, 17, 17);
-    color: white;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
     padding: 10px 25px;
@@ -179,7 +174,6 @@ body {
     width: 349px;
     height: 580px;
 }
-
 
 .tutorial-circle {
     width: 40px;
@@ -194,8 +188,7 @@ body {
     font-weight: 900;
     line-height: 24px;
     letter-spacing: 0.3px;
-    text-align: left;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
 .tutorial {
@@ -217,14 +210,18 @@ body {
     margin-bottom: -200px;
 }
 
+.fa-caret-right {
+    color: white;
+    position: absolute;
+    transform: translate(-65px);
+}
+
 .workout-video h3 {
     color: rgb(255, 255, 255);
-    font-family: Inter;
     font-size: 40px;
     font-weight: 900;
     line-height: 40px;
     letter-spacing: 1px;
-    text-align: left;
     padding-left: 15px;
     padding-top: 15px;
 }
@@ -247,9 +244,27 @@ body {
 }
 
 
+/* ------------------ */
+/* main */
+/* ------------------ */
 
 
+
+
+
+/* ------------------ */
+/* footer */
+/* ------------------ */
+
+
+
+
+
+/* ------------------ */
 /* responsive styles */
+/* ------------------ */
+
+/* small device */
 @media screen and (max-width: 576px) {
     /* header */
     .container {
@@ -262,10 +277,15 @@ body {
         margin: 2rem auto;
     }
 
+    .nav-bar {
+        margin-top: 0;
+    }
+
     .menu {
         display: block;
         color: white;
     }
+
     .nav-menu {
         display: none;
     }
@@ -274,13 +294,18 @@ body {
         flex-direction: column;
         gap: 3rem;
     }
-
-    .shape-healthy-section h1 {
+    
+    .shape-healthy-text h1 {
         font-size: 36px;
+        width: 285px;
+    }
+
+    .shape-healthy-text p {
+        width: 274px;
     }
 
     #shape {
-        font-size: 55px;
+        font-size: 59px;
     }
 
     .shape-healthy-image img {
@@ -322,6 +347,10 @@ body {
         margin-bottom: -150px;
     }
 
+    .fa-caret-right {
+        transform: translate(-50px);
+    }
+
     .workout-video h3 {
         font-size: 24px;
         line-height: 25px;
@@ -332,11 +361,11 @@ body {
     }
     
     .workout-video {
-        width: 135px;
+        width: 130px;
         height: 74px;
         border-radius: 9px;
     
-        transform: translateX(200px) translateY(-450px);
+        transform: translateX(195px) translateY(-450px);
     }
     
 }
