@@ -12,7 +12,7 @@ body {
 
 /* shared styles */
 .container {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 
     /* border: 2px solid rebeccapurple; */
@@ -20,7 +20,8 @@ body {
 }
 
 .content {
-    max-width: 70%;
+    /* max-width: 70%; */
+    max-width: 1060px;
     margin: 3rem auto;
 
     /* border: 2px solid white; */
@@ -120,9 +121,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 18rem;
 }
 
+.shape-healthy-text {
+    width: 520px;
+}
 
 .shape-healthy-section h1 {
     color: rgb(255, 255, 255);
@@ -171,8 +174,7 @@ body {
 }
 
 .shape-healthy-image img {
-    width: 349px;
-    height: 580px;
+    width: 100%;
 }
 
 .tutorial-circle {
@@ -267,17 +269,8 @@ body {
 /* small device */
 @media screen and (max-width: 576px) {
     /* header */
-    .container {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-    
-    .content {
-        max-width: 80%;
-        margin: 2rem auto;
-    }
-
     .nav-bar {
+        width: 353px;
         margin-top: 0;
     }
 
@@ -293,6 +286,10 @@ body {
     .shape-healthy-section {
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .shape-healthy-text {
+        width: 352px;
     }
     
     .shape-healthy-text h1 {
@@ -314,11 +311,12 @@ body {
 
     .btn-primary, .download-btn{
         width: 169px;
-        font-weight: 400;
+        font-weight: 600;
+        padding: 16px 20px;
     }
 
     .shape-btns {
-        gap: 0.2rem;
+        gap: 0.8rem;
     }
 
     #club {
