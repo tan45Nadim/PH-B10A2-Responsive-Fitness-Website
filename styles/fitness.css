@@ -20,7 +20,6 @@ body {
 }
 
 .content {
-    /* max-width: 70%; */
     max-width: 1060px;
     margin: 3rem auto;
 
@@ -250,9 +249,89 @@ body {
 /* main */
 /* ------------------ */
 
+.main {
+    background: rgb(0, 0, 0);
+    /* background: rgb(47, 123, 148); */
+    /* margin: 0 auto; */
+    margin-top: -50px;
 
+}
 
+/* change-habit-section styles */
+.change-habit-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
 
+.change-habit-text {
+    width: 671px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.change-habit-text h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+}
+
+.change-habit-text p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.change-habit-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.habit-img-cart {
+    width: 230px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.habit-img-cart > img {
+    border-radius: 50%;
+    border: 4px solid rgb(53, 53, 53);
+}
+
+.habit-img-cart > h3 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.habit-img-cart > p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+
+    /* extra line  */
+    margin-bottom: 22px;
+}
 
 /* ------------------ */
 /* footer */
@@ -269,6 +348,8 @@ body {
 /* small device */
 @media screen and (max-width: 576px) {
     /* header */
+
+    /* nav-bar */
     .nav-bar {
         width: 353px;
         margin-top: 0;
@@ -283,6 +364,7 @@ body {
         display: none;
     }
 
+    /* shape-healthy-section */
     .shape-healthy-section {
         flex-direction: column;
         gap: 3rem;
@@ -303,10 +385,6 @@ body {
 
     #shape {
         font-size: 59px;
-    }
-
-    .shape-healthy-image img {
-        width: 100%;
     }
 
     .btn-primary, .download-btn{
@@ -366,4 +444,21 @@ body {
         transform: translateX(195px) translateY(-450px);
     }
     
+
+    /* main */
+
+    /* change-habit-section */
+    .change-habit-text {
+        width: 338px;
+        margin-top: -60px;
+    }
+
+    .change-habit-text > h1 {
+        font-size: 32px;
+    }
+
+    .change-habit-img {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
