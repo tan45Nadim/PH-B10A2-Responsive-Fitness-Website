@@ -619,9 +619,69 @@ body {
 /* footer */
 /* ------------------ */
 
+.footer {
+    background-color: rgb(35, 35, 35);
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-t1 {
+    width: 443px;
+}
+
+.footer-t1 > h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.footer-t1 > p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.footer-t2, .footer-t3 {
+    width: 183px;
+}
 
 
+.footer-text h2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 250%;
+    letter-spacing: 0%;
+}
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.footer-copy > p {
+    width: 325px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;    
+    margin: 1rem auto;
+}
 
 /* ------------------ */
 /* responsive styles */
@@ -837,5 +897,23 @@ body {
 
     .trainer-1, .trainer-4 {
         display: none;
+    }
+
+
+    /* footer */
+    .footer {
+        padding: 25px;
+    }
+
+    .footer-content {
+        width: 350px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .footer-t1 {
+        width: 317px;
     }
 }
