@@ -370,10 +370,11 @@ body {
     margin: 14px 0px;
 }
 
-.run-img > img{
+.run-img > img {
     width: 366px;
     height: 300px;
     border-radius: 18px;
+    object-fit: cover;
 }
 
 
@@ -683,21 +684,26 @@ body {
 }
 
 .trainer-img-text {
+    width: 244px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-90%, 150%);
+    transform: translate(-60%, 170%);
 }
 
-.trainer-1 > .trainer-img-text {
+/* .trainer-1 > .trainer-img-text {
     transform: translate(-125%, 150%);
+}
+
+.trainer-2 > .trainer-img-text {
+    transform: translate(-110%, 150%);
 }
 
 .trainer-3 > .trainer-img-text,
 .trainer-4 > .trainer-img-text,
 .trainer-6 > .trainer-img-text {
     transform: translate(-100%, 150%);
-}
+} */
 
 
 .trainer-img::before {
@@ -728,8 +734,8 @@ body {
     padding-bottom: 40px;
 }
 
-.footer-t1 {
-    width: 443px;
+.footer-t1, .footer-t2 {
+    width: 450px;
 }
 
 .footer-t1 > h1 {
@@ -745,10 +751,16 @@ body {
     padding-top: 10px;
 }
 
-.footer-t2, .footer-t3 {
-    width: 183px;
+.footer-t2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
 }
 
+.footer-l2, .footer-l3 {
+    width: 183px;
+}
 
 .footer-text h2 {
     color: rgb(255, 255, 255);
@@ -1036,12 +1048,119 @@ body {
         width: 350px;
     }
 
-    .footer-text {
+    .footer-text, .footer-t2 {
         flex-direction: column;
     }
 
     .footer-t1 {
-        width: 317px;
+        width: 318px;
     }
+
+}
+
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .content {
+        max-width: 684px;
+    }
+    
+    /* header */
+
+    /* navbar */
+    /* .nav-bar {
+        width: 684px;
+    } */
+
+    /* shape-healthy-section */
+    .shape-healthy-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .shape-healthy-text {
+        width: 600px;
+    }
+
+    .tutorial {
+        transform: translateX(-40px) translateY(-220px);   
+    }
+
+    .workout-video {
+        transform: translateX(210px) translateY(-420px);   
+    }
+
+    /* change-habit-section */
+    .change-habit-text {
+        width: 500px;
+    }
+
+    .change-habit-img {
+        width: 566px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    /* run-section */
+    .run-text {
+        width: 263px;
+    }
+
+    .run-text > h1 {
+        font-size: 32px;
+    }
+
+    .run-img > img {
+        width: 256px;
+        height: 319px;        
+    }
+
+    /* training-section */
+    .training-cart > .training-p-1 {
+        transform: translate(-180%, 220%);
+    }
+
+    .training-cart > .training-p-2{
+        transform: translate(-180%, -350%);
+    }
+
+    .training-cart > .training-p-3,
+    .training-cart > .training-p-4,
+    .training-cart > .training-p-5,
+    .training-cart > .training-p-6 {
+        width: 176px;
+        transform: translate(-45%, 90%);
+    }
+
+    /* bmi-section */
+    .bmi-cart-content {
+        /* max-width: 350px; */
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .bmi-chart {
+        max-width: 310px;
+    }
+
+    .bmi-calculator {
+        max-width: 684px;
+    }
+
+    /* team-section */
+    .trainer-img > .trainer-img-text {
+        transform: translate(-35%, 170%);
+    }
+
+    /* footer */
+    .footer-text {
+        width: 450px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
 
 }
