@@ -360,6 +360,7 @@ p {
 .training-section {
     margin-top: 85px;
 }
+
 .training-text {
     width: 671px;
     margin-bottom: 40px;
@@ -372,14 +373,13 @@ p {
 .training-cart > img {
     width: 100%;
     height: 100%;
-    object-fit: cover ;
+    object-fit: cover;
 }
 
 .training-row-1,
 .training-row-2 {
     display: grid;
     grid-template-rows: 180px;
-
 }
 
 .training-row-1 {
@@ -685,6 +685,7 @@ p {
     margin: 2rem auto;
 }
 
+
 /* ------------------ */
 /* responsive styles */
 /* ------------------ */
@@ -852,14 +853,10 @@ p {
 
     .img-4 > img {
         object-position: 40%;
-    }
+    }    
 
-    .training-row-1, .training-row-2 {
-        max-width: 350px;
-    }
-    
     .training-row-1 {
-        grid-template-columns: 1.05fr 0.95fr ;
+        grid-template-columns: 1.1fr 0.9fr;
         grid-template-rows: 150px;
 
     }
@@ -874,17 +871,20 @@ p {
     }
 
     .training-cart > .training-p-1 {
+        width: 140px;
         color: white;
-        transform: translate(-40%, 270%);
+        transform: translate(-50%, 270%);
     }
 
     .training-cart > .training-p-2 {
-        transform: translate(-30%, -350%);
+        width: 100px;
+        transform: translate(-50%, -350%);
     }
 
     .training-cart > .training-p-4,
     .training-cart > .training-p-5 {
-        transform: translate(-40%, 270%);
+        width: 140px;
+        transform: translate(-50%, 270%);
     }
 
     /* bmi-section */
@@ -907,12 +907,7 @@ p {
         padding-bottom: 10px;
     }
 
-    .bmi-calculator {
-        max-width: 100%;
-    }
-
     .bmi-calculator .bmi-form {
-        /* grid-template-columns: 168px 168px; */
         grid-template-columns: 48% 48%;
     }
     
