@@ -717,7 +717,7 @@ p {
 .plan-image {
     position: absolute;
     width: 50%;
-    transform: translate(67%, -118%);
+    transform: translate(67%, -117%);
 }
 
 .plan-image-10p {
@@ -1079,8 +1079,26 @@ p {
 
     .subscription-plans {
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 3.5rem;
     }
+
+    .plan-cart {
+        padding: 90px 30px 120px 25px;
+    }
+
+    .twelve-months-plan {
+        padding-bottom: 210px;
+    }
+
+    .plan-image {
+        width: 40%;
+        transform: translate(5%, -145%);
+    }
+    
+    .plan-image-10p {
+        width: 45%;
+        transform: translate(5%, 145%);
+    }    
 
     /* footer */
     .footer-text, .footer-t2 {
