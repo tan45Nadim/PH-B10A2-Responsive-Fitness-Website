@@ -547,7 +547,7 @@ p {
 }
 
 
-/* team section */
+/* team-section styles*/
 .team-section {
     margin-top: 85px;
 }
@@ -618,6 +618,137 @@ p {
 
     border-radius: 18px;
     background: rgba(0, 0, 0, 0.2);
+}
+
+/* subscription-section styles */
+.subscription-section {
+    margin-top: 85px;
+}
+
+.subscription-text {
+    max-width: 670px;
+    margin: 58px auto;
+}
+
+.subscription-text > h1 {
+    text-align: center;
+}
+
+.subscription-text > p {
+    text-align: center;
+}
+
+.subscription-plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-cart {
+    width: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+
+    border-radius: 22px;
+    padding: 120px 30px 120px 25px;
+    position: relative;
+}
+
+.three-months-plan {
+    background: linear-gradient(to left, #8dbe37, #00b09b);
+}
+
+.twelve-months-plan {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    padding-bottom: 210px;
+}
+
+.six-months-plan {
+    background: linear-gradient(to left, #5dbcb6, #86a8e7, #7f7fd5);
+}
+
+.plan-cart h1 {
+    font-size: 70px;
+}
+
+.plan-cart .dollar {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.plan-cart h2 {
+    font-size: 25px;
+    color: white;
+}
+
+.price {
+    transform: translate(-5%, 10%);
+}
+
+.plan-cart  p {
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.plan-line {
+    width: 45px;
+    height: 2px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.plan-tittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.plan-image {
+    position: absolute;
+    width: 50%;
+    transform: translate(67%, -118%);
+}
+
+.plan-image-10p {
+    position: absolute;
+    width: 50%;
+    transform: translate(5%, 135%);
+}
+
+.plan-cart:hover {
+    transform: scale(1.04);
+}
+
+.plan-cart::before {
+    content: "$150";
+    position: absolute;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 115px;
+    font-weight: 800;
+    bottom: -15px;
+    left: 18px;
+}
+
+.three-months-plan::before {
+    content: "$90";
+    left: 40px
+}
+
+.twelve-months-plan::before {
+    content: "$270";
+    left: 10px;
+    bottom: 182px;
 }
 
 
@@ -728,7 +859,7 @@ p {
     }
 
     #shape {
-        font-size: 60px;
+        font-size: 75px;
     }
 
     .btn-primary, .download-btn{
@@ -931,6 +1062,27 @@ p {
         display: none;
     }
 
+    /* subscription-section */
+    .subscription-text {
+        max-width: 320px;
+    }
+    
+    .subscription-text > h1 {
+        font-size: 32px;
+        padding-bottom: 12px;
+        text-align: start;
+    }
+
+    .subscription-text > p {
+        text-align: start;
+    }
+
+    .subscription-plans {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    /* footer */
     .footer-text, .footer-t2 {
         flex-direction: column;
     }
@@ -1028,11 +1180,55 @@ p {
         transform: translate(-35%, 170%);
     }
 
+    /* subscription-section */
+    .plan-cart {
+        width: 180px;
+        padding: 75px 15px;
+        position: relative;
+    }
+
+    .plan-cart  p {
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+
+    .plan-image {
+        position: absolute;
+        width: 50%;
+        transform: translate(2%, -160%);
+    }
+    
+    .plan-image-10p {
+        position: absolute;
+        width: 50%;
+        transform: translate(1%, 170%);
+    }
+    
+    .plan-cart::before {
+        font-size: 70px;
+        font-weight: 900;
+        bottom: -5px;
+    }
+
+    .twelve-months-plan {
+        padding-bottom: 150px;
+    }
+    
+    .three-months-plan::before {
+        content: "$90";
+        left: 30px;
+    }
+    
+    .twelve-months-plan::before {
+        content: "$270";
+        left: 12px;
+        bottom: 145px;
+    }
+
     /* footer */
     .footer-text {
         max-width: 450px;
         flex-direction: column;
         gap: 50px;
     }
-    
 }
